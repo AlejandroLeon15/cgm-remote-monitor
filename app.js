@@ -65,7 +65,8 @@ function create(env, ctx) {
         var allowOrigin = _get(env, 'extendedSettings.cors.allowOrigin') || '*';
         console.info('Enabled CORS, allow-origin:', allowOrigin);
         app.use(function allowCrossDomain(req, res, next) {
-            res.header('Access-Control-Allow-Origin', allowOrigin);
+            res.header('Access-Control-Allow-Origin', allowOrigin);/hud.html:hud.html
+		
             res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
             res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
 
